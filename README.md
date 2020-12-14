@@ -14,3 +14,11 @@ npm install -D ts-node
 npm install -g typescript
 npm install -g ts-node
 
+# install npm
+npm install
+
+# setup token env var
+export API_TOKEN=...
+
+# run script
+ts-node index.ts

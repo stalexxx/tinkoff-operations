@@ -2,7 +2,11 @@ import OpenAPI, { MarketInstrument } from '@tinkoff/invest-openapi-js-sdk';
 const apiURL = 'https://api-invest.tinkoff.ru/openapi';
 // const sandboxApiURL = 'https://api-invest.tinkoff.ru/openapi/sandbox/';
 const socketURL = 'wss://api-invest.tinkoff.ru/openapi/md/v1/md-openapi/ws';
-const secretToken = '';//process.env.TOKEN; // токен для боевого api
+
+//Insert your token here
+const secretToken = process.env.API_TOKEN; // токен для боевого api
+
+
 // const sandboxToken = process.env.SANDBOX_TOKEN; // токен для сандбокса
 const api = new OpenAPI({ apiURL: apiURL, secretToken: secretToken as string, socketURL });
 
